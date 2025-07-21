@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <img src="images/image01.jpg" alt="Centered Image" 
+  style="display: block; margin: 15px auto; width: 330px; height: 100px;" />
+
+  <div class="menu-bar-container">
+    <div class="menu-bar">
+      <div class="menu-item">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Floors </a>
+        <div class="submenu">
+          <a href="1FirstFloor.html">First Floor</a>
+          <a href="2SecondFloor.html">Second Floor</a>
+          <a href="3ThirdFloor.html">Third Floor</a>
+          <a href="4FourthFloor.html">Fourth Floor</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">Department</a>
+        <div class="submenu">
+          <a href="FirstYearEngineering.html">First Year Department</a>
+          <a href="EngineeringChemical.html" onclick="showUnderDevelopment(event)">Chemical Department</a>
+          <a href="EngineeringCivil.html"  onclick="showUnderDevelopment(event)">Civil Department</a>
+          <a href="EngineeringComputer.html"  onclick="showUnderDevelopment(event)">Computer Department</a>
+          <a href="EngineeringElectrical.html"  onclick="showUnderDevelopment(event)">Electrical Department</a>
+          <a href="EngineeringENTC.html"  onclick="showUnderDevelopment(event)">E&TC Department</a>
+          <a href="EngineeringMechanical.html"  onclick="showUnderDevelopment(event)">Mechanical Department </a>
+          <a href="EngineeringRobotics.html"  onclick="showUnderDevelopment(event)">Robotics and Automation Department</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </div>
+  </div>
+
+  <img src="images/238.jpg" alt="Description" class="centered-image">
+ 
+  <div id="popup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+      <p>This page is under development. Try again some time later.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

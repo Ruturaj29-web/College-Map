@@ -1,0 +1,149 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <!-- Logo Image -->
+  <img src="images/image01.jpg" alt="Centered Image" 
+  style="display: block; margin: 15px auto; width: 330px; height: 100px;" />
+
+  <!-- Header/Menu -->
+  <div class="menu-bar-container">
+    <div class="menu-bar">
+      <div class="menu-item">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Floors </a>
+        <div class="submenu">
+          <a href="1FirstFloor.html">First Floor</a>
+          <a href="2SecondFloor.html">Second Floor</a>
+          <a href="3ThirdFloor.html">Third Floor</a>
+          <a href="4FourthFloor.html">Fourth Floor</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="#">Department</a>
+        <div class="submenu">
+            <a href="FirstYearEngineering.html">First Year Department</a>
+            <a href="EngineeringChemical.html" onclick="showUnderDevelopment(event)">Chemical Department</a>
+            <a href="EngineeringCivil.html"  onclick="showUnderDevelopment(event)">Civil Department</a>
+            <a href="EngineeringComputer.html"  onclick="showUnderDevelopment(event)">Computer Department</a>
+            <a href="EngineeringElectrical.html"  onclick="showUnderDevelopment(event)">Electrical Department</a>
+            <a href="EngineeringENTC.html"  onclick="showUnderDevelopment(event)">E&TC Department</a>
+            <a href="EngineeringMechanical.html"  onclick="showUnderDevelopment(event)">Mechanical Department </a>
+            <a href="EngineeringRobotics.html"  onclick="showUnderDevelopment(event)">Robotics and Automation Department</a>
+        </div>
+      </div>
+      <div class="menu-item">
+        <a href="aboutus.html">About Us</a>
+      </div>
+    </div>
+  </div>
+
+ <!-- First Floor -->
+<h1>First Floor</h1>
+<div class="center-btn">  <!-- Added div with class center-btn -->
+    <a href="106.html" class="btn">106</a>
+</div>
+
+ <!-- Second Floor -->
+ <h1>Second Floor</h1>
+ <div class="column">
+     <div class="row">
+         <a href="200.html" class="btn">200</a>
+         <a href="213.html" class="btn">213</a>
+     </div>
+     <div class="row">
+         <a href="219.html" class="btn">219</a>
+         <a href="224.html" class="btn">224</a>
+     </div>
+     <div class="row">
+         <a href="228.html" class="btn">228</a>
+         <a href="237.html" class="btn">237</a>
+     </div>
+     <div class="row">
+         <a href="238.html" class="btn">238</a>
+         <a href="244.html" class="btn">244</a>
+     </div>
+ </div>
+
+ <!-- Third Floor -->
+ <h1>Third Floor</h1>
+ <div class="column">
+     <div class="row">
+         <a href="302.html" class="btn">302</a>
+         <a href="304.html" class="btn">304</a>
+     </div>
+     <div class="row">
+         <a href="305.html" class="btn">305</a>
+         <a href="306.html" class="btn">306</a>
+     </div>
+     <div class="row">
+         <a href="314.html" class="btn">314</a>
+         <a href="315.html" class="btn">315</a>
+     </div>
+     <div class="row">
+         <a href="316.html" class="btn">316</a>
+         <a href="317.html" class="btn">317</a>
+     </div>
+     <div class="row">
+         <a href="318.html" class="btn">318</a>
+         <a href="324.html" class="btn">324</a>
+     </div>
+     <div class="row">
+         <a href="340.html" class="btn">340</a>
+         <a href="344.html" class="btn">344</a>
+     </div>
+     <div class="row">
+         <a href="345.html" class="btn">345</a>
+     </div>
+ </div>
+
+ <!-- Fourth Floor -->
+ <h1>Fourth Floor</h1>
+ <div class="column">
+     <div class="row">
+         <a href="414.html" class="btn">414</a>
+         <a href="417.html" class="btn">417</a>
+     </div>
+     <div class="row">
+         <a href="420.html" class="btn">420</a>
+         <a href="429.html" class="btn">429</a>
+     </div>
+     <div class="row">
+         <a href="432.html" class="btn">432</a>
+         <a href="437.html" class="btn">437</a>
+     </div>
+     <div class="row">
+         <a href="440.html" class="btn">440</a>
+         <a href="441.html" class="btn">441</a>
+     </div>
+     <div class="row">
+         <a href="442.html" class="btn">442</a>
+         <a href="443.html" class="btn">443</a>
+     </div>
+     <div class="row">
+         <a href="446.html" class="btn">446</a>
+         <a href="447.html" class="btn">447</a>
+     </div>
+ </div>
+
+ <div id="popup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+      <p>This page is under development. Try again some time later.</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
